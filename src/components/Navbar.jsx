@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './Navbar.css';
 
-export default function Navbar({ logo, navItems }) {
+export default function Navbar({ alt, logo, navItems }) {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <nav className='navbar'>
       <a href='/' className='brand-name'>
-        {logo}
+        <img src={logo} alt={alt} className='logo' />
       </a>
-      <button className='hamburger'>
+      <button
+        className='hamburger'
+        onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}
+      >
         {/* icon from heroicons.com */}
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -21,11 +28,15 @@ export default function Navbar({ logo, navItems }) {
           />
         </svg>
       </button>
-      <div className='navigation-menu'>
+      <div
+        className={
+          isNavExpanded ? 'navigation-menu expanded' : 'navigation-menu'
+        }
+      >
         <ul>
-          {navItems.map((item) => {
+          {navItems.map((item, index) => {
             return (
-              <li>
+              <li key={index}>
                 <a href={`${item.path}`}>{item.label}</a>
               </li>
             );

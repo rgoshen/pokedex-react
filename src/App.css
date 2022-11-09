@@ -1,10 +1,30 @@
 .App {
   text-align: center;
-  background-attachment: fixed;
-  background-image: url('assets/images/pokemon-bg.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
   color: white;
   height: 100vh;
+}
+/*
+.bg-wrapper {
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+} */
+
+/* Small devices (portrait tablets and large phones, 640px and up) */
+@media only screen and (min-width: 640px) {
+  .bg-wrapper {
+    background-size: 0px;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .bg-wrapper {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
 }
