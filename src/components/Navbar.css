@@ -5,6 +5,7 @@
   align-items: center;
   position: relative;
   padding: 0.5rem 0rem;
+  background-color: rgba(0, 0, 0, 0);
   background-color: #000;
   color: white;
 }
@@ -74,7 +75,7 @@
     left: 0;
     width: 100%;
     height: calc(100vh - 77px);
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1);
     border-top: 1px solid black;
   }
 
@@ -84,7 +85,7 @@
   }
 
   .navigation-menu li a {
-    color: white;
+    color: black;
     width: 100%;
     padding: 1.5rem 0;
   }
@@ -95,5 +96,6 @@
 
   .navigation-menu.expanded ul {
     display: block;
+    z-index: 100;
   }
 }
