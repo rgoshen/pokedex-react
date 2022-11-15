@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import PokeBoard from './components/PokemonBoard';
+import Board from './components/Board';
 import './assets/css/styles.css';
 import './App.css';
 import bgImage from './assets/images/pokemon-bg.jpg';
@@ -17,7 +17,7 @@ function App() {
         alt='pokeball'
         navItems={[{ path: '/about', label: 'About' }]}
       />
-      <PokeBoard />
+      <Board />
     </div>
   );
 }
