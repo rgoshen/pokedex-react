@@ -1,0 +1,24 @@
+@font-face {
+  font-family: pokeSolid;
+  src: url('../assets/fonts/pokemon_solid.ttf');
+}
+
+.poke-board {
+  padding: 30px;
+}
+
+.title {
+  font-family: pokeSolid;
+  color: #ffcb05;
+  font-size: 4rem;
+  -webkit-text-stroke: 2px #3c5aa6;
+}
+
+.poke-grid {
+  display: flexbox;
+  flex-direction: row;
+  max-width: 90vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 20px;
+}
