@@ -5,6 +5,8 @@
 
 .poke-board {
   padding: 30px;
+  height: 100%;
+  width: 100%;
 }
 
 .title {
@@ -18,7 +20,7 @@
   display: flexbox;
   flex-direction: row;
   max-width: 90vw;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   border-radius: 5px;
   padding: 20px;
 }
