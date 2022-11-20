@@ -18,7 +18,7 @@ export default function Card({ data }) {
       </div>
       <div className='card-body'>
         <h2>{data.name.english}</h2>
-        <ul>
+        <ul className='attr-list'>
           <li>HP: {data.base.HP}</li>
           <li>Attack: {data.base.Attack}</li>
           <li>Defense: {data.base.Defense}</li>
@@ -26,6 +26,12 @@ export default function Card({ data }) {
           <li>Sp. Defense: {data.base['Sp. Defense']}</li>
           <li>Speed: {data.base.Speed}</li>
         </ul>
+        <br />
+        <p className='types'>
+          {data.type.map((el, index) => (
+            <span key={index}>{el} </span>
+          ))}
+        </p>
       </div>
     </div>
   );

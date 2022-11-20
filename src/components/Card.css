@@ -43,6 +43,7 @@
   color: #ffcb05;
 }
 
-.card-body ul {
+.attr-list {
   list-style-type: none;
+  text-align: left;
 }
